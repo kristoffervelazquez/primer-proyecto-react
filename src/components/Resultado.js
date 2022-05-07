@@ -8,8 +8,8 @@ const Resultado = (props) => {
             <h2>Resumen</h2>
             <p>La cantidad solicitada es: ${cantidad}</p>
             <p>A pagar en un plazo de {plazo} meses</p>
-            <p>Su pago mensual es de:  </p>
-            <p>Total a pagar: ${total}</p>
+            <p>Su pago mensual es de: ${(total/plazo).toFixed(2)} </p>
+            <p>Total a pagar: ${(total).toFixed(2)}</p>
         </div>
      );
 }
